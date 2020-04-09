@@ -1,11 +1,12 @@
-package com.example.cse438_final_project
+package com.example.cse438_final_project.Activity.Login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
-import com.firebase.ui.auth.AuthUI
+import com.example.cse438_final_project.Activity.MainPageActivity
+import com.example.cse438_final_project.Activity.TeamActivity
+import com.example.cse438_final_project.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         signup.setOnClickListener{
-            startActivity(Intent(this,SignUp::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))
         }
 
         loginButton.setOnClickListener {
@@ -65,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI(currentuser : FirebaseUser?){
         if(currentuser != null){
-            startActivity(Intent(this,TeamActivity::class.java))
+            startActivity(Intent(this, MainPageActivity::class.java))
         }else{
             Toast.makeText(baseContext, "Authentication failed. Please try with different Email",
                 Toast.LENGTH_SHORT).show()

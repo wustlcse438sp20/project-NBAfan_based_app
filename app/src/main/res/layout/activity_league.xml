@@ -6,28 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".Activity.Login.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go Big or Go Home"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"/>
+
+
+
 
     <Button
-        android:id="@+id/addplayer"
+        android:id="@+id/myteambutton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="ADD Player"
+        android:text="Schedule"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.8"
+
         />
 
+    <Button
+        android:id="@+id/myleague"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Go back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.2"
 
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

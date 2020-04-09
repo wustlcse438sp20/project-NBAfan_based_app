@@ -1,10 +1,10 @@
-package com.example.cse438_final_project
+package com.example.cse438_final_project.Activity.Login
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.firebase.ui.auth.data.model.User
+import com.example.cse438_final_project.R
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
@@ -14,7 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestoreSettings
 
 import kotlinx.android.synthetic.main.activity_signup.*
 
-class SignUp : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
@@ -67,7 +67,14 @@ class SignUp : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val thisUser =
-                        User(signupE.text.toString(), name.text.toString(), 1000, 0, 0, 0);
+                        com.example.cse438_final_project.DataType.User(
+                            signupE.text.toString(),
+                            name.text.toString(),
+                            1000,
+                            0,
+                            0,
+                            0
+                        );
                     db.collection("Users1")
                         .add(thisUser)
                         .addOnSuccessListener(OnSuccessListener<DocumentReference> { documentReference ->

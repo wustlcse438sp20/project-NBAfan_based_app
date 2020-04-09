@@ -12,16 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.Login.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.cse438_final_project.SignUp">
+        <activity android:name="com.example.cse438_final_project.Activity.Login.SignUpActivity">
         </activity>
-        <activity android:name="com.example.cse438_final_project.TeamActivity">
+        <activity android:name="com.example.cse438_final_project.Activity.TeamActivity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.Activity.MainPageActivity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.Activity.ActivePlayerActivity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.Activity.LeagueActivity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.Activity.PlayerInfo">
         </activity>
     </application>
 
