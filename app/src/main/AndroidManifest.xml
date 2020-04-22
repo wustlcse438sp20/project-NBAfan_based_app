@@ -31,6 +31,10 @@
         </activity>
         <activity android:name="com.example.cse438_final_project.Activity.PlayerInfo">
         </activity>
+        <activity android:name="com.example.cse438_final_project.ui.MainActivity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.Activity.Standings2019Activity">
+        </activity>
     </application>
 
 </manifest>

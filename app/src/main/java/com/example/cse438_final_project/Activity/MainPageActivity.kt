@@ -14,6 +14,7 @@ import com.example.cse438_final_project.DataType.Player
 import com.example.cse438_final_project.R
 import com.example.cse438_final_project.ViewModel.NewsViewModel
 import com.example.cse438_final_project.ViewModel.PlayerViewModel
+import com.example.cse438_final_project.ui.MainActivity
 import kotlinx.android.synthetic.main.activity_activeplayerlist.*
 import kotlinx.android.synthetic.main.activity_mainpage.*
 import kotlinx.android.synthetic.main.activity_mainpage.myleague
@@ -58,7 +59,13 @@ class MainPageActivity : AppCompatActivity(){
         }
 
         myleague.setOnClickListener {
-            startActivity(Intent(this, LeagueActivity::class.java))
+            startActivity(Intent(this, Standings2019Activity::class.java))
         }
+
+        morenews.setOnClickListener(){
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
+
     }
 }
