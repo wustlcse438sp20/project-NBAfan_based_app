@@ -70,12 +70,9 @@ class SignUpActivity : AppCompatActivity() {
                         com.example.cse438_final_project.DataType.User(
                             signupE.text.toString(),
                             name.text.toString(),
-                            1000,
-                            0,
-                            0,
-                            0
+                            listOf()
                         );
-                    db.collection("Users1")
+                    db.collection("userTest")
                         .add(thisUser)
                         .addOnSuccessListener(OnSuccessListener<DocumentReference> { documentReference ->
                             Toast.makeText(this, "User created", Toast.LENGTH_LONG)

@@ -35,7 +35,6 @@ class PlayerViewHolder(inflater: LayoutInflater, parent: ViewGroup):
         Picasso.get().load(player.PhotoUrl).into(playerPhoto)
         playerPhoto.setOnClickListener {
             val intent = Intent(playerPhoto.context, PlayerInfo::class.java)
-
             intent.putExtra("id", player.PlayerID.toString())
             ContextCompat.startActivity(playerPhoto.context, intent, null)
         }

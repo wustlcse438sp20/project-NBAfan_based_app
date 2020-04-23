@@ -15,6 +15,10 @@ interface SportsioInterface {
     @GET("scores/json/News?key=7789b0590d18495ebd33cd4da2cf5fd6")
     suspend fun getNews(): Response<List<News>>
 
+    @GET("scores/json/Player/{id}?key=7789b0590d18495ebd33cd4da2cf5fd6")
+    suspend fun getPlayer(@Path("id") id: String): Response<Player>
 
+    @GET("stats/json/Players/{id}?key=7789b0590d18495ebd33cd4da2cf5fd6")
+    suspend fun getTeam(@Path("id") id: String): Response<List<Player>>
 
 }

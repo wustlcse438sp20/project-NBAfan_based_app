@@ -35,7 +35,8 @@ class NewsViewHolder(inflater: LayoutInflater, parent: ViewGroup):
         time?.text = news.TimeAgo
         title.setOnClickListener {
             val intent = Intent(title.context, NewsActivity::class.java)
-            intent.putExtra("content", news.Content.toString())
+            intent.putExtra("content", news.Content)
+            intent.putExtra("title",news.Title)
             ContextCompat.startActivity(title.context, intent, null)
         }
 

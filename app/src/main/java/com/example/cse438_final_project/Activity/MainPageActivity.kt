@@ -15,6 +15,7 @@ import com.example.cse438_final_project.R
 import com.example.cse438_final_project.ViewModel.NewsViewModel
 import com.example.cse438_final_project.ViewModel.PlayerViewModel
 import com.example.cse438_final_project.ui.MainActivity
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_activeplayerlist.*
 import kotlinx.android.synthetic.main.activity_mainpage.*
 import kotlinx.android.synthetic.main.activity_mainpage.myleague
@@ -26,10 +27,16 @@ class MainPageActivity : AppCompatActivity(){
 
     var newslist :ArrayList<News> = ArrayList()
 
+    private lateinit var auth: FirebaseAuth
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
+
+        auth = FirebaseAuth.getInstance()
+
 
     }
 
@@ -65,7 +72,10 @@ class MainPageActivity : AppCompatActivity(){
         morenews.setOnClickListener(){
             startActivity(Intent(this, MainActivity::class.java))
         }
-
+        signout.setOnClickListener {
+            auth.signOut()
+            startActivity(Intent(this,MainActivity::class.java))
+        }
 
     }
 }

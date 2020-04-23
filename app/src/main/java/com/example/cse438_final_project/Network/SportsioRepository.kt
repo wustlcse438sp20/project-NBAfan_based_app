@@ -43,4 +43,34 @@ class SportsioRepository {
         }
     }
 
+    fun getPlayer(resBody: MutableLiveData<Player>, Id : String){
+        CoroutineScope(Dispatchers.IO).launch {
+            val response = service.getPlayer(Id)
+            withContext(Dispatchers.Main) {
+                try{
+                    if(response.isSuccessful) {
+                        resBody.value = response.body()
+                    }
+                } catch (e: HttpException) {
+                    println("Http error")
+                }
+            }
+        }
+    }
+
+    fun getTeam(resBody: MutableLiveData<List<Player>>,Id: String){
+        CoroutineScope(Dispatchers.IO).launch {
+            val response = service.getTeam(Id)
+            withContext(Dispatchers.Main) {
+                try{
+                    if(response.isSuccessful) {
+                        resBody.value = response.body()
+                    }
+                } catch (e: HttpException) {
+                    println("Http error")
+                }
+            }
+        }
+    }
+
 }
