@@ -9,6 +9,7 @@ interface TopHeadlinesEndpoint {
 
     @GET("everything")
     fun getTopHeadlines(
+        @Query("sources") sources: String,
         @Query("q") q: String,
         @Query("apiKey") apiKey: String
     ): Observable<TopHeadlines>

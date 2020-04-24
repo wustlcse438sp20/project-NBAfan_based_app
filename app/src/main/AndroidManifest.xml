@@ -31,13 +31,56 @@
         </activity>
         <activity android:name="com.example.cse438_final_project.Activity.PlayerInfo">
         </activity>
-        <activity android:name="com.example.cse438_final_project.ui.MainActivity">
+        <activity android:name="com.example.cse438_final_project.ui.MainActivityNews">
         </activity>
-        <activity android:name="com.example.cse438_final_project.Activity.Standings2019Activity">
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2019Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2018Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2017Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2016Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2015Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2014Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2013Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2012Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2011Activity">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsE.Standings2010Activity">
         </activity>
         <activity android:name="com.example.cse438_final_project.Activity.NewsActivity">
         </activity>
-
+        <activity android:name="com.example.cse438_final_project.RankingsInterface.selectEastWest">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.RankingsInterface.eastselector">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.RankingsInterface.westselector">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2010">
+    </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2011">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2012">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2013">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2014">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2015">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2016">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2017">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2018">
+        </activity>
+        <activity android:name="com.example.cse438_final_project.StandingsW.wst2019">
+        </activity>
     </application>
 
 </manifest>

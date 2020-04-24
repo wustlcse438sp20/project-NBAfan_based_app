@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/western"
+        android:layout_marginTop="50dp"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="                                Select a Year                            "
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/e2010"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2010"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+        <Button
+            android:id="@+id/e2011"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2011"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+        <Button
+            android:id="@+id/e2012"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2012"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+        <Button
+            android:id="@+id/e2013"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/e2014"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+        <Button
+            android:id="@+id/e2015"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+        <Button
+            android:id="@+id/e2016"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+        <Button
+            android:id="@+id/e2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/e2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+        <Button
+            android:id="@+id/e2019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"></Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="170dp"></Button>
+
+</LinearLayout>

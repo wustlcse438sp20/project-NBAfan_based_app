@@ -5,18 +5,15 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.cse438_final_project.Adapter.ActivePlayerAdapter
+import com.example.cse438_final_project.Activity.Login.MainActivity
 import com.example.cse438_final_project.Adapter.NewsAdapter
 import com.example.cse438_final_project.DataType.News
-import com.example.cse438_final_project.DataType.Player
 import com.example.cse438_final_project.R
+import com.example.cse438_final_project.RankingsInterface.selectEastWest
 import com.example.cse438_final_project.ViewModel.NewsViewModel
-import com.example.cse438_final_project.ViewModel.PlayerViewModel
-import com.example.cse438_final_project.ui.MainActivity
+import com.example.cse438_final_project.ui.MainActivityNews
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_activeplayerlist.*
 import kotlinx.android.synthetic.main.activity_mainpage.*
 import kotlinx.android.synthetic.main.activity_mainpage.myleague
 import kotlinx.android.synthetic.main.activity_mainpage.myteambutton
@@ -66,15 +63,15 @@ class MainPageActivity : AppCompatActivity(){
         }
 
         myleague.setOnClickListener {
-            startActivity(Intent(this, Standings2019Activity::class.java))
+            startActivity(Intent(this, selectEastWest::class.java))
         }
 
         morenews.setOnClickListener(){
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MainActivityNews::class.java))
         }
         signout.setOnClickListener {
             auth.signOut()
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
     }

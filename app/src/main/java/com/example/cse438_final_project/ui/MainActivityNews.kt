@@ -29,8 +29,8 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_newsmain.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-
-class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener{
+//huge thanks and credit to newsapi and fahrican for his RxJava2NewsAPI tutorial
+class MainActivityNews : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener{
 
     private  val ENDPOINT_URL by lazy {"https://newsapi.org/v2/"}
     private  lateinit var topHeadlinesEndpoint: TopHeadlinesEndpoint
@@ -66,6 +66,10 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener{
     }
 
 
+    override fun onStart() {
+        super.onStart()
+        checkUserKeywordInput()
+    }
 
     override fun onDestroy() {
         super.onDestroy()
@@ -134,8 +138,8 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener{
     }
 
     private fun queryTopHeadlines() {
-        //swipe_refresh.isRefreshing = true
-        topHeadlinesObservable = topHeadlinesEndpoint.getTopHeadlines("NBA", newsApiConfig)
+        //get the top stories about NBA from ESPN
+        topHeadlinesObservable = topHeadlinesEndpoint.getTopHeadlines("ESPN","NBA", newsApiConfig)
         subscribeObservableOfArticle()
     }
 
@@ -182,7 +186,6 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener{
             retry_fetch_button.visibility = View.VISIBLE
             retry_fetch_button.setOnClickListener { checkUserKeywordInput() }
         }
-        swipe_refresh.isRefreshing = false
     }
 
 
